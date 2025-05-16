@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import {  MatDialogModule } from '@angular/material/dialog';
 import { ListaFacturasComponent } from '../../Factura/lista-facturas/lista-facturas.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,7 @@ import { ListaFacturasComponent } from '../../Factura/lista-facturas/lista-factu
     MatButtonModule,
     MatDialogModule,
     ListaFacturasComponent  ,
+    MatDividerModule
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']

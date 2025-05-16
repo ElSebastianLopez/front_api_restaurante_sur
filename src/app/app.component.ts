@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CrearFacturaComponent } from './Components/Factura/crear-factura/crear-factura.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import {  MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CrearFacturaComponent],
+  imports: [RouterOutlet,MatToolbarModule,MatButtonModule,MatDialogModule,MatDividerModule,RouterModule ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
