@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <span>Mi Aplicación - Home</span>
+</mat-toolbar>
+
+<main style="padding: 16px;">
+  <button mat-raised-button color="accent" (click)="abrirCrearFactura()">
+    Crear Factura
+  </button>
+
+  <!-- Tabla con la lista de facturas -->
+  <section style="margin-top: 24px;">
+    <app-lista-facturas></app-lista-facturas>
+  </section>
+</main>
+
+<footer style="text-align: center; padding: 12px; border-top: 1px solid #ccc;">
+  &copy; 2025 Mi Empresa
+</footer>

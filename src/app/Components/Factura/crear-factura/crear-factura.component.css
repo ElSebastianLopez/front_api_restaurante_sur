@@ -1,0 +1,134 @@
+/* Estilos para mejorar la visibilidad de los select en modales */
+
+/* Aumentar espacio entre campos para evitar superposición */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 28px !important; /* Aumentado para evitar superposición */
+  display: block !important;
+}
+
+/* Estilo para el campo del select */
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #1976d2 !important;
+}
+
+/* Estilo para el panel desplegable */
+.mat-select-panel {
+  background-color: white !important;
+  color: black !important;
+  z-index: 10000 !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5) !important;
+  border-radius: 4px !important;
+}
+
+/* Opciones con texto negro */
+.mat-option {
+  color: black !important;
+  height: auto !important;
+  line-height: normal !important;
+  padding: 12px 16px !important;
+}
+
+/* Opciones hover y seleccionadas */
+.mat-option:hover,
+.mat-option.mat-active,
+.mat-option.mat-selected:not(.mat-option-disabled) {
+  background-color: #1976d2 !important;
+  color: white !important;
+}
+
+/* Estilo para opciones deshabilitadas */
+.mat-option.mat-option-disabled {
+  color: rgba(0, 0, 0, 0.38) !important;
+  background-color: #f5f5f5 !important;
+}
+
+/* Mejorar contraste del contenido del select */
+.mat-select-value {
+  color: rgba(0, 0, 0, 0.87) !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+/* Estilo para el fondo del formulario dentro del modal */
+mat-dialog-content {
+  background-color: #f8f9fa !important;
+  padding: 24px !important;
+  border-radius: 4px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Mejorar visibilidad de los campos del formulario */
+.mat-form-field-appearance-fill .mat-form-field-flex,
+.mat-form-field-appearance-outline .mat-form-field-flex {
+  background-color: white !important;
+  border: 1px solid #c0c0c0 !important; /* Borde más oscuro */
+  border-radius: 4px !important;
+  padding: 8px 8px 0 8px !important;
+}
+
+/* Color de fondo cuando el campo está enfocado */
+.mat-form-field-appearance-fill.mat-focused .mat-form-field-flex,
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-flex {
+  background-color: #e8f0fe !important;
+  border-color: #1976d2 !important;
+}
+
+/* Estilizar las etiquetas */
+.mat-form-field-label {
+  color: rgba(0, 0, 0, 0.7) !important;
+  font-weight: 500 !important;
+}
+
+/* Mejorar los mensajes de error para que no se superpongan */
+.mat-error {
+  color: #f44336 !important;
+  font-size: 12px !important;
+  padding-top: 8px !important;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  background-color: white !important;
+  padding: 3px 6px !important;
+  border-radius: 3px !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+  z-index: 100 !important;
+}
+
+/* Mejorar estilo para fecha (date picker) */
+input[type="date"] {
+  height: 36px !important;
+  padding: 0 12px !important;
+  border: none !important;
+  background-color: transparent !important;
+  width: 100% !important;
+}
+
+/* Estilo para el modal en general */
+.mat-dialog-container {
+  padding: 24px !important;
+  background-color: white !important;
+  border-radius: 8px !important;
+  box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12) !important;
+}
+
+/* Título del modal */
+h2.mat-dialog-title {
+  color: #1976d2 !important;
+  margin-bottom: 24px !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+
+/* Botones en el modal */
+mat-dialog-actions {
+  padding: 12px 0 !important;
+  margin-top: 12px !important;
+  border-top: 1px solid #e0e0e0 !important;
+}
+
+/* Evitar superposición de elementos seleccionados */
+.mat-select-value-text {
+  display: inline-block !important;
+  padding: 2px 0 !important;
+}
